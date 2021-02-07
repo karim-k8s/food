@@ -1,0 +1,216 @@
+@font-face{
+  font-family: f1;
+  src : url(fonts/Foxy.ttf);
+}
+@font-face{
+  font-family: f2;
+  src : url(fonts/f1.ttf);
+}
+/*
+@font-face{
+  font-family: f3;
+  src : url(fonts/f3.ttf);
+}
+@font-face{
+  font-family: f4;
+  src : url(fonts/f4.ttf);
+}
+@font-face{
+  font-family: f5;
+  src : url(fonts/f5.ttf);
+}
+@font-face{
+  font-family: f6;
+  src : url(fonts/f6.ttf);
+}
+@font-face{
+  font-family: f7;
+  src : url(fonts/f7.ttf);
+}*/
+
+
+body{
+    top: 0px!important;
+    /*padding-top: 0px!important;
+    margin-top: 0px!important;*/
+    overflow-x: hidden!important;
+    overflow-y: auto!important;
+}
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: rgb(26, 142, 236);
+outline: 1px solid rgb(26, 142, 236);
+}
+body.preloader-site {
+  overflow: hidden;
+}
+
+.preloader-wrapper {
+  height: 100%;
+  width: 100%;
+  background: #0073CE;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+  position: absolute;
+  top: 50%;
+  right: 65%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 120px;
+}
+
+.hidden.menu {
+    display: none;
+  }
+
+  .bgContainer{
+    background: url('/css/images/backgroundCopi.jpg') no-repeat center center !important;
+    /*background-color: black !important;*/
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    -o-background-size: cover!important;
+    background-size: cover!important;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%!important;
+    min-height: 700px;
+    height: 100%!important;
+    position: fixed;
+    z-index: -1;
+  }
+
+  
+  @media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+      display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+      display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+      display: block;
+    }
+    .masthead.segment {
+      min-height: 350px;
+    }
+    .masthead h1.ui.header {
+      font-size: 2em;
+      margin-top: 1.5em;
+    }
+    .masthead h2 {
+      margin-top: 0.5em;
+      font-size: 1.5em;
+    }
+
+    .bgContainer{
+      min-height: 400px;
+    }
+  }
+
+  .topButton{
+    position: fixed!important;
+    z-index: 999!important;
+    bottom: 20px!important;right:10px!important;
+  }
+
+  #sideMenu{
+    background:transparent!important;
+    position: fixed;
+    top: 60%;
+    right: 0px!important;
+    margin-right:0px!important; 
+    transform: translateY(-50%);
+    border: none!important;
+    box-shadow: none!important;
+    z-index: 999!important;
+  }
+  #btnLoginUser{
+    margin-right: 5px!important
+  }
+  #sideMenu button,#btnLoginUser{
+    background:transparent!important;
+    box-shadow: none!important;
+  }
+
+  .activeItem{
+    border-right: 3px solid rgb(26, 142, 236)!important;
+    border-radius: 0px!important;
+  }
+  
+  #loginModal .menu,#loginModal .menu .button{
+    background:transparent!important;
+    box-shadow: none!important;
+    border: none!important;
+    color: white!important;
+  }
+
+  #loginModal .menu .active{
+    color: white!important;
+    border-bottom: 3px solid rgb(26, 142, 236)!important;
+    border-radius: 0px!important;
+  }
+  .btnCloseModal{
+    color:white!important;
+  }
+  #teamDetails .label{
+    background:transparent!important;
+  }
+
+  #mapButtons{
+    /*position: fixed!important;*/
+    z-index: 999!important;
+    /*bottom: 30px!important;*/
+    width: 100%!important;
+  }
+  .leaflet-draw-section,.leaflet-draw-toolbar,.leaflet-control{
+    border: none!important;
+  }
+  .leaflet-control-attribution{
+    display: none!important;
+  }
+  .leaflet-control a{
+    color: white!important;
+    background-color: rgb(26, 142, 236)!important;
+    border-radius: 50%!important;
+  }
+  .leaflet-draw-actions a {
+    border-radius: 10px!important;
+  }
+
+  .subLabel{
+    background-color:#ffcb57!important;
+    color:white!important;
+  }
+
+  #mainContainer{
+    width: 100% !important;
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+  }
+  .presentSeg{
+    position: absolute;
+    width: 100% !important;
+    margin-top: 3em!important;
+  }
+
+  .menuSeg{
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+
+  }
