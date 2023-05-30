@@ -1,0 +1,18 @@
+# Use a base image optimized for Azure Functions in Python
+FROM mcr.microsoft.com/azure-functions/python:3.8
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the application code to the working directory
+COPY . /app
+
+# Install the Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose the port on which your application listens
+EXPOSE 8000
+
+# Set the entrypoint command to run the application
+CMD ["python", "app.py"]
+
