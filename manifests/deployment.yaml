@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aksflow
+  labels:
+    app: aksflow
+  namespace: namespace-workflow-1685724825972
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aksflow
+  template:
+    metadata:
+      labels:
+        app: aksflow
+    spec:
+      containers:
+        - name: aksflow
+          image: acrworkflow1685724825972.azurecr.io/image-workflow-1685724825972:latest
+          ports:
+            - containerPort: 80
